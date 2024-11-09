@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webcam Capture with WhatsApp Share</title>
+    <style>
+        #videoElement, #capturedImage {
+            display: block;
+            margin: 20px auto;
+        }
+        #captureBtn, #whatsappShareBtn {
+            display: block;
+            margin: 10px auto;
+            padding: 10px 20px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <h2 style="text-align: center;">Webcam Photo Capture and WhatsApp Share</h2>
+    <!-- Video element to display the webcam feed -->
+    <video id="videoElement" width="640" height="480" autoplay></video>
+
+    <!-- Button to capture photo -->
+    <button id="captureBtn">Capture Photo</button>
+
+    <!-- Canvas element to capture and display the photo -->
+    <canvas id="canvas" width="640" height="480" style="display: none;"></canvas>
+
+    <!-- Image element to display the captured photo -->
+    <img id="capturedImage" alt="Captured Image">
+
+    <!-- WhatsApp Share Button -->
+    <button id="whatsappShareBtn" style="display: none;">Share on WhatsApp</button>
+
+    <script src="webcam.js"></script>
+</body>
+</html>
